@@ -104,73 +104,9 @@
 <div id="segmentDiv" style="display:none;"></div>	
 
 <!-- end of body add js here -->
-<script src="./st.314909d993b087fe9ecbb36083f9ac1b.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-	//array of language supported by application
-	var langArray=new Array("es","fr","de","it");
-	//default langauge
-	//var lang='en';
-	
-	var navigatorLanguage = (navigator.language) ? navigator.language: navigator.browserLanguage;
-	
-	var languageVar = navigatorLanguage.substr(0,2).toLowerCase();
-	
-	var subLanguageVar = navigatorLanguage.substr(3,2).toLowerCase();
-
-	if(languageVar!='en')
-	{
-		var jsFile = null;
-		//check for language
-		switch (languageVar) {
-		case "zh":
-			jsFile="https://ws.sharethis.com/secure/js/local/cn/message.js";
-			if ("tw" == subLanguageVar) {
-				jsFile="https://ws.sharethis.com/secure/js/local/tw/message.js";
-			}
-			break;
-		case "es":
-			jsFile="https://ws.sharethis.com/secure/js/local/es/message.e5cdbb7671ab474b46221772dfb45ce3.js";
-			break;
-		case "fr":
-			jsFile="https://ws.sharethis.com/secure/js/local/fr/message.aa62a365cfe8afe4816e26a3e24a6f15.js";
-			break;					
-		case "de":
-			jsFile="https://ws.sharethis.com/secure/js/local/de/message.73f25a1bc8ca75a47317635afd4124f4.js";
-			break;
-		case "it":
-			jsFile="https://ws.sharethis.com/secure/js/local/it/message.3b41efd9228f109db72042a16b4b648c.js";
-			break;
-		case "ja":
-			jsFile="https://ws.sharethis.com/secure/js/local/jp/message.js";
-			break;	
-		case "nl":
-			jsFile="https://ws.sharethis.com/secure/js/local/nl/message.js";
-			break;	
-		case "pt":
-			jsFile="https://ws.sharethis.com/secure/js/local/pt/message.js";
-			break;
-		case "ru":
-			jsFile="https://ws.sharethis.com/secure/js/local/ru/message.js";
-			break;
-		case "tr":
-			jsFile="https://ws.sharethis.com/secure/js/local/tr/message.js";
-			break;	
-		case "ua":
-			jsFile="https://ws.sharethis.com/secure/js/local/ua/message.js";
-			break;	
-		case "vn":
-			jsFile="https://ws.sharethis.com/secure/js/local/vn/message.js";
-			break;	
-		default: 
-		}
-		//message file to include
-		if (jsFile != null) {
-			document.write('<script type="text/javascript" src="'+ jsFile +'"><\/script>');
-		}
-	}
-</script>
+<!-- <script src="./st.314909d993b087fe9ecbb36083f9ac1b.js" type="text/javascript"></script> -->
 
 
 
-</body></html>
+</body>
+</html>
