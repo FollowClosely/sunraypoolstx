@@ -10,27 +10,27 @@ export default {
   buildDir: './build/',
 
   styles: {
-    src: 'app/styles/**/*.scss',
-    dest: 'build/css',
+    src: 'app/assets/css/**/*.scss',
+    dest: 'build/assets/css',
     prodSourcemap: false,
     sassIncludePaths: []
   },
 
   scripts: {
-    src: 'app/js/**/*.js',
-    dest: 'build/js',
-    test: 'test/**/*.js',
+    src: 'app/assets/js/**/*.js',
+    dest: 'build/assets/js',
+    // test: './test/**/*.js',
     gulp: 'gulp/**/*.js'
   },
 
   images: {
-    src: 'app/images/**/*',
-    dest: 'build/images'
+    src: 'app/assets/images/**/*',
+    dest: 'build/assets/images'
   },
 
   fonts: {
-    src: ['app/fonts/**/*'],
-    dest: 'build/fonts'
+    src: ['app/assets/fonts/**/*'],
+    dest: 'build/assets/fonts'
   },
 
   assetExtensions: [
@@ -49,20 +49,20 @@ export default {
 
   views: {
     index: 'app/index.html',
-    src: 'app/views/**/*.html',
-    dest: 'app/js'
+    src: 'app/assets/views/**/*.html',
+    dest: 'app/assets/js'
   },
 
   gzip: {
-    src: 'build/**/*.{html,xml,json,css,js,js.map,css.map}',
-    dest: 'build/',
+    src: 'build/assets/**/*.{html,xml,json,css,js,js.map,css.map}',
+    dest: 'build/assets',
     options: {}
   },
 
-  browserify: {
-    bundleName: 'main.js',
-    prodSourcemap: false
-  },
+  // browserify: {
+  //   bundleName: 'scripts.js',
+  //   prodSourcemap: false
+  // },
 
   test: {
     karma: 'test/karma.conf.js',
