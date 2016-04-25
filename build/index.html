@@ -28,9 +28,6 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Sun Ray Pools">
   <meta name="twitter:site" content="@SunRayPoolsTX">
-  <!-- 
-  <meta name="twitter:image" content="https://bitly.com/pages/wp-content/uploads/2014/09/facebook-share-default1.jpg">
-   -->
    <meta name="twitter:creator" content="@SunRayPoolsTX">
 
   <link rel="stylesheet" href="./assets/css/main.css" type="text/css" media="all">
@@ -56,6 +53,13 @@ jQuery(function(){
   var header = $("#header");
   var $window = $(window);
   
+  //add scroll animation
+
+  $(".button-enterprise-cta").click(function(e){
+  $('html, body').animate({scrollTop:$('#enterprise-form').offset().top +1}, 'slow');
+  // window.ga('send','event', 'button-click', 'enterprise-top-cta', 'Enterprise Top CTA Request Demo');
+});
+
   $window.scroll(function(e) {
     if ($window.scrollTop() > 400 && window.scrollbool===true) {
       wrap.addClass("fixed-header bounceInDown");
@@ -68,13 +72,25 @@ jQuery(function(){
 });
 </script>
 
+
+
+
+
+
+
+
+
+
+
+
+
 <div id="stage" class="root-enterprise type-page enterprise">
 
 <header id="header" data-template="stage-header" class="header-transparent header-inverse">
   <div id="header-inner">
     <div class="container container-pod container-pod-short">
       <h1 id="header-logo">
-        <a href="http://sunraypoolstx.com">  
+        <a href="http://sunraypoolstx.com">
           <span>
             
             Sun Ray Pools           
@@ -84,50 +100,49 @@ jQuery(function(){
       </h1>
       <nav id="navigation" role="navigation">
         <ul id="menu-header-menu" class="nav top-nav clearfix">
-          <li id="menu-item-2745" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2745"><a href="https://bitly.com/pages/tour">
+          <li id="menu-item-2690" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2625 current_page_item menu-item-has-children menu-item-2690"><a href="#pool-projects">
 
-            Tour
-
-          </a></li>
-          <li id="menu-item-2690" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2625 current_page_item menu-item-has-children menu-item-2690"><a href="https://bitly.com/pages/enterprise">
-
-            Enterprise
+            Pools &amp; Spas
 
           </a></li>
-          <li id="menu-item-2692" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2692"><a href="https://bitly.com/pages/resources">
+          <li id="menu-item-2692" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2692"><a href="#testimonials">
 
-            Resources
+            Reviews
 
           </a></li>
-          <li id="menu-item-2691" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2691"><a href="https://bitly.com/pages/about">About</a></li>
+          <li id="menu-item-2691" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2691"><a href="#who-we-are">
+
+            Why Us?
+
+          </a></li>
         </ul>       
       </nav>
       <div id="header-actions">
-          <a href="#" class="header-login button button-clear hidden-on-mobile">
-            
-            Login
-            
-          </a>
-          <a href="#" class="header-signup button button-primary button-white hidden-on-mobile">
-            
-            Sign Up 
-            
-          </a>  
+        <a href="#get-an-estimate" class="header-login button button-clear hidden-on-mobile">
+          
+          Free Quote
+          
+        </a>
+        <a href="#special-features" class="header-signup button button-primary button-white hidden-on-mobile">
+          
+          Lifestyle
+          
+        </a>
       </div>
       <section class="mobile-sign-in">    
-        <a id="header-mobile-menu-button" href="https://bitly.com/pages#" width="39px" height="39px">
+        <a id="header-mobile-menu-button" href="#" width="39px" height="39px">
         </a>
         <div class="mobile-link-group">
-          <a class="login" href="https://bitly.com/a/sign_in">
+          <a class="login" href="#special-features">
 
-            Login
-
-          </a>
-          <a class="signup" href="https://bitly.com/a/sign_up">
-
-            Sign Up
+            Get Wet
 
           </a>
+          <a class="signup" href="#get-an-estimate">
+
+            Adult Swim
+
+          </a>          
         </div>
       </section>
     </div><!-- .container-pod .container-pod-short-->
@@ -136,14 +151,23 @@ jQuery(function(){
 
 
 
-
 <div id="page">
+
+<!-- <div id="page-header" class="stage-pod page-header-inverse" role="banner" data-template="page-header">
+<div style="background-image:url(./assets/images/bg01.jpeg)" class="tinted-image" style="position: absolute; z-index: 0;"></div>
+ -->
     <div id="page-header" class="stage-pod page-header-inverse" role="banner" data-template="page-header">
-    <div id="page-header-background" class="backstretch stage-pod-background  stage-pod-background-align-center stage-pod-background-align-center" data-backstretch-image="./assets/images/bg01.png" style="position: absolute; z-index: 0; background: none;">
-      <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 574px; width: 1038px; z-index: -999998; position: absolute;"><img src="./assets/images/bg01.png" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1038px; height: 583.587px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -4.79333px;">
+    <div id="page-header-background" style="background-image:url(./assets/images/bg07.png)" class="tinted-image" style="position: absolute; z-index: 0;"></div>
+
+    <!-- <div id="page-header-background" class="backstretch stage-pod-background  stage-pod-background-align-center stage-pod-background-align-center" data-backstretch-image="./assets/images/bg01.jpeg" style="position: absolute; z-index: 0;">
+      <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 574px; width: 1038px; z-index: -999998; position: absolute;"><img src="./assets/images/bg01.jpeg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1038px; height: 583.587px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -4.79333px;">
       </div>
-    </div>      
-    <div id="page-header-background-video" class="load-video" data-video-autoplay="autoplay" data-video-webm="" data-video-ogg="" data-video-mp4="./assets/images/bgvid.mp4" data-video-swf="/pages/wp-content/themes/bitly/library/videos/views/contact/page-contact-header-video.swf">
+    </div> -->
+
+<!-- <div id="page-header-background-video" class="load-video" data-video-autoplay="autoplay" data-video-webm="" data-video-ogg="" data-video-mp4="https://player.vimeo.com/external/106231004.hd.mp4?s=47248c9bb43aedf6bfadd67aeeb7f232" data-video-swf="/pages/wp-content/themes/bitly/library/videos/views/contact/page-contact-header-video.swf">
+      <video preload="auto" autoplay="autoplay" loop="" muted="" style="width: 1425px; height: 801.562px; position: absolute; top: 50%; left: 50%; margin-left: -712.5px; margin-top: -400.781px;"><source src="" type="video/webm"><source src="" type="video/ogg; codecs=&quot;theora, vorbis&quot;"><source src="https://player.vimeo.com/external/106231004.hd.mp4?s=47248c9bb43aedf6bfadd67aeeb7f232" type="video/mp4"></video><object scale="noborder" type="application/x-shockwave-flash" data="/pages/wp-content/themes/bitly/library/videos/views/contact/page-contact-header-video.swf" id="page-header-background-video-swf" name="page-header-background-video-swf" data-aspectratio="NaN" style="width: 1425px;"><param name="movie" value="/pages/wp-content/themes/bitly/library/videos/views/contact/page-contact-header-video.swf"><param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="wmode" value="opaque"></object></div> -->
+    <!--
+    <div id="page-header-background-video" class="load-video" data-video-autoplay="autoplay" data-video-webm="" data-video-ogg="" data-video-mp4="./assets/images/bgvid.mp4">
       <video preload="auto" autoplay="autoplay" loop="" muted="" style="width: 1038px; height: 583.875px; position: absolute;">
         <source src="" type="video/webm">
         <source src="" type="video/ogg; codecs=&quot;theora, vorbis&quot;"><source src="./assets/images/bgvid.mp4" type="video/mp4">
@@ -155,6 +179,10 @@ jQuery(function(){
         <param name="wmode" value="opaque">
       </object>
     </div>
+    -->
+
+
+
       <div id="page-header-inner">
     
         <div class="container container-pod">
@@ -164,14 +192,14 @@ jQuery(function(){
             <div class="col-mini-8 col-mini-offset-2 col-small-10 col-small-offset-1 col-medium-10 col-medium-offset-1 col-large-8 col-large-offset-2">
 
             <div class="page-header-icon"></div>
-            <h1 class="page-header-title flush-top  ">
+            <h1 class="page-header-title flush-top">
             
-              Enterprise Edition
+              Poolbuilders of Greater Dallas
             
             </h1>
-            <h2 class="page-header-headline flush-top ">
+            <h2 class="h2-titling page-header-headline flush-top ">
 
-              UPGRADE YOUR LINKS
+              DIVE IN. COOL OFF. <strong>LIVE WELL</strong>.
             
             </h2>
 
@@ -179,11 +207,11 @@ jQuery(function(){
               <div class="col-small-10 col-small-offset-1 col-medium-10 col-medium-offset-1 col-large-8 col-large-offset-2">
                 <p class="page-header-description flush-top flush-bottom">
 
-                  Branded short links. Expanded analytics. User management. Dedicated support.
+                  Custom-Built Swimming Pools &amp; Spas for Indoors &amp; Outdoors
 
                   <button class="ent-cta-link button-white button-enterprise-cta">
 
-                    Request a Demo
+                    Get an Estimate
 
                   </button>
                 </p>
@@ -196,339 +224,121 @@ jQuery(function(){
   </div><!-- #page-header .stage-pod .page-header-inverse -->
 
 
+<div id="page-content">    
 
+    <div class="testimonial-wrapper">    
+      <div class="row"> 
+        <div class="container">
+          <h2 class="testimonial-header" style="padding-top:48px">
 
-<div id="page-content">
+            TRUSTED BY THE BEST PEOPLE &amp; THE SMARTEST BRANDS
 
+          </h2>
+          <div class="col-mini-3 col-medium-3 testimonial-individual testimonial-individual-1">
+            <img src="./assets/images/testimonials/hs01.png" class="testimonial-avatar">
+            <h5 class="testimonial-subheader">
 
+              Dave &amp; Janine
 
+            </h5>  
+            <p class="testimonial-position">
 
+              Rowlett
 
-<style>
+            </p>
+          </div>
+          
+          <div class="col-mini-3 col-medium-3 testimonial-individual testimonial-individual-2">
+            <img src="./assets/images/testimonials/hs02.png" class="testimonial-avatar">
+            
+            <h5 class="testimonial-subheader">
 
-.brand-bar-row {
-  float: left;
-  margin: -15px 0 0 40px;
-}
+              Daryl &amp; Gretta
 
-.brand-bar-logo {
-  background-size: contain !important;
-}
+            </h5>
+            <p class="testimonial-position">
 
-@media (max-width: 992px) {
-  .brand-bar-logo {
-    width: 155px;
-    height: 80px;
-    margin: 10px auto !important;
-    text-align: center;
-    background-size: contain !important;
-  }
-  
-  #enterprise-form-header button {
-    width: 100% !important;
-    padding: 14px 0 !important; 
-  }
-}
+              Rowlett
 
-.brand-subhead p {
-  font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #ee6123;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 40px 0 30px 0;
-  margin: 0; 
-}
+            </p>
+          </div>
+          <div class="col-mini-3 col-medium-3 testimonial-individual testimonial-individual-3">
+            <img src="./assets/images/testimonials/hs03.png" class="testimonial-avatar">
+            <h5 class="testimonial-subheader">
 
-.hidden-on-desktop {
-  background: #eff7fc;
-  padding-bottom: 40px;
-}
+              David &amp; Kelly
 
-.brand-bar-logo.small01 {
-  background: url('./assets/images/logos/small01.png') center no-repeat;
-  margin-left: 50px;
-  margin-top: 8px;
-  height: 60px;
-}
-.brand-bar-logo.small02 {
-  background: url('./assets/images/logos/small02.png') center no-repeat;
-  margin-left: 0;
-}
-.brand-bar-logo.small03 {
-  background: url('./assets/images/logos/small03.png') center no-repeat;
-}
-.brand-bar-logo.small04 {
-  background: url('./assets/images/logos/small04.png') center no-repeat;
-  height: 25px;
-  margin-left: 25px;
-  margin-top: 24px;
-}
-.brand-bar-logo.small05 {
-  background: url('./assets/images/logos/small05.png') center no-repeat;
-  height: 35px;
-  margin-left: -5px;
-  margin-top: 20px;
-}
-.brand-bar-logo.small06 {
-  background: url('./assets/images/logos/small06.png') center no-repeat;
-  margin-right: -28px;
-  margin-left: 40px;
-}
-.brand-bar-logo.small07 {
-  background: url('./assets/images/logos/small07.png') center no-repeat;
-}
-.brand-bar-logo.small08 {
-  background: url('./assets/images/logos/small08.png') center no-repeat;
-}
-.brand-bar-logo.small09 {
-  background: url('./assets/images/logos/small09.png') center no-repeat;
-  height: 35px;
-  margin-left: 5px;
-  margin-top: 20px;
-}
-.brand-bar-logo.small10 {
-  background: url('./assets/images/logos/small10.png') center no-repeat;
-  height: 32px;
-  margin-top: 20px;
-}
-.brand-bar-logo.small11 {
-  background: url('./assets/images/logos/small11.png') center no-repeat;
-  margin-right: 10px;
-  margin-left: 60px;
-}
-.brand-bar-logo.small12 {
-  background: url('./assets/images/logos/small12.png') center no-repeat;
-  margin-left: 5px;
-  margin-right: 10px;
-}
-.brand-bar-logo.small13 {
-  background: url('./assets/images/logos/small13.png') center no-repeat;
-  margin-left: -10px;
-  margin-right: 0px;
-}
-.brand-bar-logo.small14 {
-  background: url('./assets/images/logos/small14.png') center no-repeat;
-}
-.brand-bar-logo.small15 {
-  background: url('./assets/images/logos/small15.png') center no-repeat;
-}
-.brand-bar-logo.small16 {
-  background: url('./assets/images/logos/small16.png') center no-repeat;
-  height: 50px;
-  margin-right: 0;
-  margin-left: 45px;
-}
-.brand-bar-logo.small17 {
-  background: url('./assets/images/logos/small17.png') center no-repeat;
-  margin-left: 0;
-  height: 50px;
-}
-.brand-bar-logo.small18 {
-  background: url('./assets/images/logos/small18.png') center no-repeat;
-  margin-top: 20px;
-}
-.brand-bar-logo.small19 {
-  background: url('./assets/images/logos/small19.png') center no-repeat;
-  height: 45px;
-  margin-left: 30px;
-}
-.brand-bar-logo.small20 {
-  background: url('./assets/images/logos/small20.png') center no-repeat;
-  margin-left: 0;
-  height: 50px;
-}
-.brand-bar-logo.small21 {
-  background: url('./assets/images/logos/small21.png') center no-repeat;
-  height: 50px;
-  margin-left: 40px;
-}
-.brand-bar-logo.small22 {
-  background: url('./assets/images/logos/small22.png') center no-repeat;
-  margin-top: 25px;
-  height: 35px;
-}
-.brand-bar-logo.small23 {
-  background: url('./assets/images/logos/small23.png') center no-repeat;
-  margin-left: 0;
-  margin-top: 22px;
-}
-.brand-bar-logo.small24 {
-  background: url('./assets/images/logos/small24.png') center no-repeat;
-  height: 48px;
-  margin-left: 0;
-  margin-top: 15px;
-}
-.brand-bar-logo.small25 {
-  background: url('./assets/images/logos/small25.png') center no-repeat;
-  height: 45px;
-  margin-top: 15px;
-}
+            </h5>
+            <p class="testimonial-position">
 
-#page-about-values {
-  position: relative;
-  height: 212px;
-  background: #eff7fc;
-  width: 100%;
-  padding: 0;
-}
-#page-about-values .page-about-values-inner {
-  position: relative;
-  text-align: center; 
-  padding: 0px !important;
-  margin: 0;  
-}
-#page-about-values .page-about-value {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
-}
-.value-container {
-  position: relative;
-  margin: 0 auto;
-  height: inherit;
-  max-width: 1024px;
-}
+              McKinney
 
-#page-about-values .page-about-value.active {
-  opacity: 100;
-  filter: alpha(opacity=10000);
-  left: 0;
-  z-index: 1001;
-}
-#page-about-values .page-about-value.inactive {
-  left: 33%;
-  z-index: 1000;
-}
-#page-about-values .page-about-value.inactive.before-1 {
-  left: -33%;
-}
-#page-about-values .page-about-values-navigation {
-  position: absolute;
-  height: 64px;
-  z-index: 1002;
-  width: 100%;
-  top: 55px;
-}
+            </p>
+          </div>
+          
+          <div class="col-mini-3 col-medium-3 testimonial-individual testimonial-individual-4">
+            <img src="./assets/images/testimonials/hs04.png" class="testimonial-avatar">
+            
+            <h5 class="testimonial-subheader">
 
-#page-about-values .page-about-values-navigation.page-about-values-navigation-previous {
-  position: absolute;
-  width: 20px;
-  left: 24px;
-}
-#page-about-values .page-about-values-navigation.page-about-values-navigation-next {
-  position: absolute;
-  width: 20px;
-  right: 48px;
-}
+              Delores D.
 
-.hidden-on-mobile {
-  display: none;
-}
+            </h5>  
+            <p class="testimonial-position">
 
-.hidden-on-desktop {
-  background: #eff7fc;
-  padding-bottom: 40px;
-}
+              Rowlett
 
-@media (min-width: 768px) {
-  
-  .hidden-on-mobile {
-    display: inline-block;
-  }
-  
-  .hidden-on-desktop {
-    display: none;
-    background: #eff7fc !important;
-    text-align: center;
-  }
+            </p>            
+          </div>
+        </div><!-- .container -->
+      </div><!-- .row -->
+    </div><!-- .container .container-pod .container-pod-tall .testimonial-container-pod -->
 
-  #enterprise-form-header button {
-    padding: 14px 255px !important;
-  }
+    <div id="testimonial-billboard" class="">
+      <div id="testimonials" class="overlay">
+        <div class="billboard-triangle" style="left: 519.3px;"></div>
+        <div class="billboard-blurb">
+          <p>
 
-  .brand-bar-logo {
-    float: left;
-    width: 155px;
-    height: 40px;
-    margin: 18px 15px;
-  }
+            “We have been thrilled with Sun Ray Pools right from the time they came to give us a quote. Bob was on site for every phase of the pool installation. Diane is a whiz with scheduling subcontractors &amp; minimizing delays. We couldn’t be happier with the service and highly recommended sun ray pools.”
 
-  .brand-subhead {
-    text-align: center; 
-  }
-}
+          </p>
+        </div>
+      </div>
+    </div>
 
-@media (max-width: 992px) {
-  .brand-bar-logo {
-    width: 155px;
-    height: 40px;
-    margin: 18px auto !important;
-    background-size: contain !important;
-  }
-  .brand-bar-logo.buzzFeed {
-    margin-bottom: 25px !important;
-  }
-  .main-header {
-    font-size: 22px !important;
-    line-height: 28px !important;
-    width: 225px;
-    margin: auto;
-  }
-}
-
-.billboard-blurb p {
-  color: white !important;
-}
-
-.testimonial-container-pod {
-  padding-top: 42px 0 !important;
-}
-
-</style>
-
-
-
+      <div class="subhero-padding">
     <div class="hidden-on-desktop">
       <div class="brand-subhead">
-        <p>
+        <h2 class="brand-tagline">
+          
+          TRUSTED BY THE BEST BRANDS &amp; THE SMARTEST PEOPLE
 
-          Trusted by the smartest brands
-
-        </p>
+        </h2>
       </div>
-      <div class="mobile-brand-bar">
-        <div class="brand-bar-logo small01"></div>
-        <div class="brand-bar-logo small02"></div>
-        <div class="brand-bar-logo small03"></div>
-        <div class="brand-bar-logo small04"></div>
-        <div class="brand-bar-logo small05"></div>
+      <div class="mobile-brand-bar row">
+        <div class="col-xs-offset-1 col-sx-2 brand-bar-logo small01"></div>
+        <div class="col-sx-2 brand-bar-logo small02"></div>
+        <div class="col-sx-2 brand-bar-logo small03"></div>
+        <div class="col-sx-2 brand-bar-logo small04"></div>
+        <div class="col-sx-2 brand-bar-logo small05"></div>
       </div>
     </div>
     <div id="page-about-values" class="hidden-on-mobile">
       <div class="page-about-values-inner">
         <div class="brand-subhead">
-          <p>
+          <h2 class="brand-tagline">
+          
+          TRUSTED BY THE SMARTEST BRANDS &amp; THE BEST PEOPLE
 
-              Trusted by the smartest brands
-
-          </p>
+          </h2>
         </div>
         <div class="page-about-values-navigation">
-          <a href="https://bitly.com/pages#" id="page-about-values-navigation-previous" class="page-about-values-navigation page-about-values-navigation-previous">
+          <a href="#" id="page-about-values-navigation-previous" class="page-about-values-navigation page-about-values-navigation-previous">
             <i class="icon icon-large icon-color icon-caret-left">
             </i>
           </a>
-          <a href="https://bitly.com/pages#" id="page-about-values-navigation-next" class="page-about-values-navigation page-about-values-navigation-next">
+          <a href="#" id="page-about-values-navigation-next" class="page-about-values-navigation page-about-values-navigation-next">
             <i class="icon icon-large icon-color icon-caret-right">
             </i>
           </a>
@@ -536,20 +346,20 @@ jQuery(function(){
 
         <div class="value-container">
           <div class="page-about-value inactive before-1">
-            <div class="vertically-balanced-column vertically-balanced-column-center-vertical">
-              <div class="brand-bar-row">
-                <div class="brand-bar-logo small01"></div>
-                <div class="brand-bar-logo small02"></div>
-                <div class="brand-bar-logo small03"></div>
-                <div class="brand-bar-logo small04"></div>
-                <div class="brand-bar-logo small05"></div>
+            <div class="vertically-balanced-column vertically-balanced-column-center-vertical brand-bar-wrapper-1 container-fluid">
+              <div class="brand-bar-row brand-bar-row-1 row">
+                <div class="col-offset-xs-1 col-xs-2 brand-bar-logo small01"></div>
+                <div class="brand-bar-logo col-xs-2 small02"></div>
+                <div class="brand-bar-logo col-xs-2 small03"></div>
+                <div class="brand-bar-logo col-xs-2 small04"></div>
+                <div class="brand-bar-logo col-xs-2 small05"></div>
               </div>
             </div>
           </div>
 
           <div class="page-about-value active">
             <div class="vertically-balanced-column vertically-balanced-column-center-vertical">
-              <div class="brand-bar-row">
+              <div class="brand-bar-row brand-bar-row-2">
                 <div class="brand-bar-logo small06"></div>
                 <div class="brand-bar-logo small07"></div>
                 <div class="brand-bar-logo small08"></div>
@@ -561,7 +371,7 @@ jQuery(function(){
 
           <div class="page-about-value inactive    after-1">
             <div class="vertically-balanced-column vertically-balanced-column-center-vertical">
-              <div class="brand-bar-row">
+              <div class="brand-bar-row brand-bar-row-3">
                 <div class="brand-bar-logo small11"></div>
                 <div class="brand-bar-logo small12"></div>
                 <div class="brand-bar-logo small13"></div>
@@ -571,7 +381,7 @@ jQuery(function(){
             </div>
           </div>
 
-          <div class="page-about-value inactive   after-2">
+          <!-- <div class="page-about-value inactive   after-2">
             <div class="vertically-balanced-column vertically-balanced-column-center-vertical">
               <div class="brand-bar-row">
                 <div class="brand-bar-logo small16"></div>
@@ -594,112 +404,19 @@ jQuery(function(){
               </div>
             </div>
           </div>
-
+ -->
         </div><!-- .value-container -->
       </div><!-- .page-about-values-inner -->
-    </div><!-- #page-about-values -->
+
+    </div><!-- .subhero-padding --> 
+  
+
+  </div><!-- #page-about-values -->
 
 
-
-    <div id="testimonial-billboard" class="hidden-on-mobile">
-      <div class="overlay">
-        <div class="billboard-triangle" style="left: 519.3px;"></div>
-        <div class="billboard-blurb">
-          <p>
-
-            “In an increasingly competitive social space, Bitly Branded Short Domains help us stand out in an unparalleled way and encourage a higher degree of engagement."
-
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container container-pod container-pod-tall testimonial-container-pod">    
-      <div class="row"> 
-        <div class="container">
-          <h2 class="testimonial-header">
-
-            DRIVING MARKETING STRATEGY FOR THE SMARTEST COMPANIES
-
-          </h2>
-          <div class="col-small-12 col-medium-3 testimonial-individual testimonial-individual-1">
-            <img src="./assets/images/testimonials/hs01.png" class="testimonial-avatar">
-            <h5 class="testimonial-subheader">
-
-              Jason Rosoff
-
-            </h5>  
-            <p class="testimonial-position">
-
-              Manager of Partner  Marketing &amp; Distribution
-
-            </p>
-          </div>
-          
-          <div class="col-small-12 col-medium-3 testimonial-individual testimonial-individual-2">
-            <img src="./assets/images/testimonials/hs02.png" class="testimonial-avatar">
-            
-            <h5 class="testimonial-subheader">
-
-              Marissa O'Hare
-
-            </h5>
-              
-            <p class="testimonial-position">
-
-              Senior Director of Audience Development
-
-            </p>
-          </div>
-          <div class="col-small-12 col-medium-3 testimonial-individual testimonial-individual-3">
-            <img src="./assets/images/testimonials/hs03.png" class="testimonial-avatar">
-            <h5 class="testimonial-subheader">
-
-              Keegan Fong
-
-            </h5>
-            <p class="testimonial-position">
-
-              Media Marketing Manager
-
-            </p>
-          </div>
-          
-          <div class="col-small-12 col-medium-3 testimonial-individual testimonial-individual-4">
-            <img src="./assets/images/testimonials/hs04.png" class="testimonial-avatar">
-            
-            <h5 class="testimonial-subheader">
-
-              Apryl Pilolli
-
-            </h5>  
-            <p class="testimonial-position">
-
-              Social Data Analyst &amp; Manager
-
-            </p>            
-          </div>
-        </div><!-- .container -->
-      </div><!-- .row -->
-    </div><!-- .container .container-pod .container-pod-tall .testimonial-container-pod -->
-
-
-
-
-    <div id="testimonial-billboard" class="hidden-on-mobile">
-      <div class="overlay">
-        <div class="billboard-triangle" style="left: 519.3px;"></div>
-          <div class="billboard-blurb">
-            <p>“In an increasingly competitive social space, Bitly Branded Short Domains help us stand out in an unparalleled way and encourage a higher degree of engagement."</p></div>
-      </div>
-    </div>
-
-
-
-    
 
     <div id="ent-audience" class="stage-pod stage-pod-light">
-      <div class="container container-pod container-pod-tall">
+      <div id="pool-projects" class="container container-pod container-pod-tall">
         <div class="row vertically-balanced" data-vertically-balanced-screen-size-min="768">
 
           <div class="col-small-6 hidden-small hidden-medium hidden-large">
@@ -709,13 +426,13 @@ jQuery(function(){
                   <img src="./assets/images/AudienceIcon.png" style="height: 48px; width: 48px;">
                   <h2>
 
-                    Audience
+                    Swimming Pools
 
                   </h2>
                 </div>
                 <p class="lead tall">
                   
-                  Tap into the Bitly Network, the 4B+ monthly uniques that engage with Bitly. Automatically brand all the links created by the Bitly Network, benchmark your activity to your competitors, and collect key insights into how this previously untapped audience interacts with you.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                   
                 </p>
               </div>
@@ -738,13 +455,13 @@ jQuery(function(){
                   <img src="./assets/images/AudienceIcon.png" style="height: 48px; width: 48px;">
                   <h2>
 
-                    Audience
+                    Swimming Pools
 
                   </h2>
                 </div>
                 <p class="lead tall">
                   
-                  Tap into the Bitly Network, the 4B+ monthly uniques that engage with Bitly. Automatically brand all the links created by the Bitly Network, benchmark your activity to your competitors, and collect key insights into how this previously untapped audience interacts with you.
+                  Lorem ipsum placeholder text was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                   
                 </p>
                 <div class="button-toolbar flush-bottom"></div>
@@ -765,13 +482,17 @@ jQuery(function(){
               <div class="vertically-balanced-column-inner" style="margin-top: -112.5px; top: 50%; position: absolute; width: 100%;">
                 <div class="divider-header-group">
                   <img src="./assets/images/brandingicon.png" style="height:36px;width:48px;">
-                  <h2>Branding</h2>
+                  <h2>
+
+                    Indoor Spas
+
+                  </h2>
                 </div>
                 <p class="lead tall case-study-cta">
 
-                  Drive CTR up to 34% with Branded Short Domains. Branded Short Domains replace the “bit.ly” in your links with your brand name, allowing you to take total control of your content.
+                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
 
-                  <a href="http://bitly.is/1OvS9nU">
+                  <a href="#">
 
                     Download the case study
 
@@ -815,7 +536,7 @@ jQuery(function(){
 
                 Your customers don’t engage with you in silos, so why market that way? Build and manage true omnichannel campaigns to understand how all of your marketing channels contribute to campaign success, then export that data to supplement your analytics reports.
 
-                <a href="http://bitly.is/1S9oRyI">
+                <a href="#">
 
                   Read the case study
 
@@ -858,15 +579,15 @@ jQuery(function(){
                   <img src="./assets/images/DeepLinksIcon.png" style="height:35px;width:47px;">
                   <h2>
 
-                    Mobile
+                    Commercial Projects
 
                   </h2>
                 </div>
                 <p class="lead tall case-study-cta">
                   
-                  Provide the best user experience, whether your customers are on desktop or mobile. Create device-aware links that drive to mobile deep links that drive app installs and re-engagement.
+                  Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below:
 
-                  <a href="http://bitly.is/1O75a3U">
+                  <a href="#">
 
                     Download the case study
 
@@ -894,15 +615,15 @@ jQuery(function(){
                   <img src="./assets/images/DeepLinksIcon.png" style="height:35px;width:47px;">
                   <h2>
 
-                    Mobile
+                    Commercial Projects
 
                   </h2>
                 </div>
                 <p class="lead tall case-study-cta">
                   
-                  Provide the best user experience, whether your customers are on desktop or mobile. Create device-aware links that drive to mobile deep links that drive app installs and re-engagement.
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
 
-                  <a href="http://bitly.is/1O75a3U">
+                  <a href="#">
 
                     Download the case study
 
@@ -931,13 +652,13 @@ jQuery(function(){
                   <img src="./assets/images/UserManagementIcon.png" style="height:48px;width:48px;">
                   <h2>
 
-                    User Management
+                    Pool Equipment
 
                   </h2>
                 </div>
                 <p class="lead tall">
                   
-                  Organize your account in a way that suits your company structure and workflow. Segment account activity and analytics by department, location, channel, brand or user to collect meaningful insights into how teams perform individually or how your company performs as a whole.              
+                  “But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.”              
                 
                 </p>
                 <div class="button-toolbar flush-bottom"></div>
@@ -958,6 +679,11 @@ jQuery(function(){
       </div>
     </div><!-- #ent-user-management -->
 
+
+
+
+
+
     <div id="ent-dedicated-support" class="stage-pod stage-pod-light">
       <div class="container container-pod container-pod-tall">
         <div class="row vertically-balanced" data-vertically-balanced-screen-size-min="768">
@@ -968,13 +694,13 @@ jQuery(function(){
                   <img src="./assets/images/SupportIcon.png" style="height:48px;width:48px;">
                   <h2>
 
-                    Dedicated Support
+                    Custom Pool Builds
 
                   </h2>
                 </div>
                 <p class="lead tall">
                   
-                  You’re never working alone here. You’ll work with your own dedicated customer success manager to help you with onboarding, day-to-day troubleshooting and ensuring you’re getting the most of your Bitly Brand Tools account.
+                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
                   
                 </p>
               </div>
@@ -996,11 +722,15 @@ jQuery(function(){
               <div class="vertically-balanced-column-inner" style="margin-top: -118.5px; top: 50%; position: absolute; width: 100%;">
                 <div class="divider-header-group">
                   <img src="./assets/images/SupportIcon.png" style="height:48px;width:48px;">
-                  <h2>Dedicated Support</h2>
+                  <h2>
+
+                    Custom Pool Builds
+
+                  </h2>
                 </div>
                 <p class="lead tall">
                   
-                  You’re never working alone here. You’ll work with your own dedicated customer success manager to help you with onboarding, day-to-day troubleshooting and ensuring you’re getting the most of your Bitly Brand Tools account.
+                  If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
                   
                 </p>
                 <div class="button-toolbar flush-bottom"></div>
@@ -1012,154 +742,26 @@ jQuery(function(){
       </div>
     </div><!-- #ent-dedicated-support -->
 
-    <div id="ent-security" class="stage-pod">
-      <div class="container container-pod container-pod-tall">
-        <div class="row vertically-balanced" data-vertically-balanced-screen-size-min="768">
 
-          <div class="col-small-6 col-medium-6 col-large-6">
-            <div class="vertically-balanced-column vertically-balanced-column-center-vertical" style="height: 365px; position: relative;">
-              <div class="vertically-balanced-column-inner" style="margin-top: -104.5px; top: 50%; position: absolute; width: 100%;">
-                <div class="divider-header-group">
-                  <img src="./assets/images/SecurityIcon.png" style="height:48px;width:48px;">
-                  <h2>
 
-                    24/7 Security
+    
 
-                  </h2>
-                </div>
-                <p class="lead tall">
-                  
-                  We’re looking out for you. We have a dedicated IT team monitoring your account 24/7 and guaranteed 99% uptime. We’re always on the lookout, so you don’t have to be.
-                              
-                </p>
-                <div class="button-toolbar flush-bottom">
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-small-5 col-small-offset-1 col-medium-5 col-medium-offset-1 col-large-5 col-large-offset-1 col-spill">
-            <div class="vertically-balanced-column" style="height: 365px;">
-              <div class="vertically-balanced-column-inner">
-                <div class="page-links-custom-bitlinks-scene">
-                  <img src="./assets/images/SecurityImage.png" class="image-responsive">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id="who-we-are" class="srp-forecast">
+      <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=32.52971&lon=-97.286868&name=Burleson, TX&color=#ee6123"> </iframe>
     </div>
-    <div class="hidden-on-desktop">
-      <div class="brand-subhead">
-        <p>
 
-          Trusted by the smartest brands
 
-        </p>
-      </div>
-      <div class="mobile-brand-bar">
-        <div class="brand-bar-logo small01"></div>
-        <div class="brand-bar-logo small02"></div>
-        <div class="brand-bar-logo small03"></div>
-        <div class="brand-bar-logo small04"></div>
-        <div class="brand-bar-logo small05"></div>
-      </div>
-    </div>
-    <div id="page-about-values" class="hidden-on-mobile">
-      <div class="page-about-values-inner">
-        <div class="brand-subhead">
-          <p>
 
-              Trusted by the smartest brands
-
-          </p>
-        </div>
-        <div class="page-about-values-navigation">
-          <a href="https://bitly.com/pages#" id="page-about-values-navigation-previous" class="page-about-values-navigation page-about-values-navigation-previous">
-            <i class="icon icon-large icon-color icon-caret-left">
-            </i>
-          </a>
-          <a href="https://bitly.com/pages#" id="page-about-values-navigation-next" class="page-about-values-navigation page-about-values-navigation-next">
-            <i class="icon icon-large icon-color icon-caret-right">
-            </i>
-          </a>
-        </div>
-
-        <div class="value-container">
-          <div class="page-about-value inactive before-1">
-            <div class="vertically-balanced-column vertically-balanced-column-center-vertical">
-              <div class="brand-bar-row">
-                <div class="brand-bar-logo small01"></div>
-                <div class="brand-bar-logo small02"></div>
-                <div class="brand-bar-logo small03"></div>
-                <div class="brand-bar-logo small04"></div>
-                <div class="brand-bar-logo small05"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="page-about-value active">
-            <div class="vertically-balanced-column vertically-balanced-column-center-vertical">
-              <div class="brand-bar-row">
-                <div class="brand-bar-logo small06"></div>
-                <div class="brand-bar-logo small07"></div>
-                <div class="brand-bar-logo small08"></div>
-                <div class="brand-bar-logo small09"></div>
-                <div class="brand-bar-logo small10"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="page-about-value inactive    after-1">
-            <div class="vertically-balanced-column vertically-balanced-column-center-vertical">
-              <div class="brand-bar-row">
-                <div class="brand-bar-logo small11"></div>
-                <div class="brand-bar-logo small12"></div>
-                <div class="brand-bar-logo small13"></div>
-                <div class="brand-bar-logo small14"></div>
-                <div class="brand-bar-logo small15"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="page-about-value inactive   after-2">
-            <div class="vertically-balanced-column vertically-balanced-column-center-vertical">
-              <div class="brand-bar-row">
-                <div class="brand-bar-logo small16"></div>
-                <div class="brand-bar-logo small17"></div>
-                <div class="brand-bar-logo small18"></div>
-                <div class="brand-bar-logo small19"></div>
-                <div class="brand-bar-logo small20"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="page-about-value inactive  before-2">
-            <div class="vertically-balanced-column vertically-balanced-column-center-vertical">
-              <div class="brand-bar-row">
-                <div class="brand-bar-logo small21"></div>
-                <div class="brand-bar-logo small22"></div>
-                <div class="brand-bar-logo small23"></div>
-                <div class="brand-bar-logo small24"></div>
-                <div class="brand-bar-logo small25"></div>
-              </div>
-            </div>
-          </div>
-
-        </div><!-- .value-container -->
-      </div><!-- .page-about-values-inner -->
-    </div><!-- #page-about-values -->
     <div id="enterprise-form" class="stage-pod">
       <div id="enterprise-form-header">
 
-        Request a demo of Bitly Enterprise Edition
+        Estimates are quick, on-site, and always free.
         
         <div>
           <div class="container container-pod">
             <div class="row">
               <div class="col-small-8 col-small-offset-2 col-medium-8 col-medium-offset-2 col-large-6 col-large-offset-3">
-                <div class="resource-content-body-form-wrapper bitly-form " data-form-subtitle="" data-form-title="Get Started With Bitly Brand Tools" data-formid="1485" data-pid="2625" thankyou-in-modal="false">
+                <div class="resource-content-body-form-wrapper bitly-form " data-form-subtitle="" data-form-title="Get Started With Sun Ray Pools" data-formid="1485" data-pid="2625" thankyou-in-modal="false">
 
 
 
@@ -1205,7 +807,7 @@ jQuery(function(){
         First name
 
       </label>
-      <input id="FirstName" name="FirstName" maxlength="255" type="text" class="mktoField mktoTextField mktoRequired input" placeholder="First name (Required)">
+      <input id="FirstName" name="FirstName" maxlength="255" type="text" class="mktoField mktoTextField mktoRequired input" placeholder="First name">
     </div>
   </div>
   <div class="mktoFieldDescriptor mktoFormCol col col-small-6">
@@ -1215,7 +817,7 @@ jQuery(function(){
         Last name
 
       </label>
-      <input id="LastName" name="LastName" maxlength="255" type="text" class="mktoField mktoTextField mktoRequired input" placeholder="Last name (Required)">
+      <input id="LastName" name="LastName" maxlength="255" type="text" class="mktoField mktoTextField mktoRequired input" placeholder="Last name">
 
     </div>
   </div>
@@ -1229,7 +831,7 @@ jQuery(function(){
         Email Address
 
       </label>
-      <input id="Email" name="Email" maxlength="255" type="email" class="mktoField mktoEmailField mktoRequired input" placeholder="Email Address (Required)">
+      <input id="Email" name="Email" maxlength="255" type="email" class="mktoField mktoEmailField mktoRequired input" placeholder="Email Address">
     </div>
   </div>
   <div class="mktoFieldDescriptor mktoFormCol col col-small-6">
@@ -1239,11 +841,12 @@ jQuery(function(){
         Phone number
 
       </label>
-      <input id="Phone" name="Phone" maxlength="255" type="tel" class="mktoField mktoTelField mktoRequired input" placeholder="Phone number (Required)">
+      <input id="Phone" name="Phone" maxlength="255" type="tel" class="mktoField mktoTelField mktoRequired input" placeholder="Phone number">
     </div>
   </div>
 </div>
 
+<!--
 <div class="mktoFormRow row">
   <div class="mktoFieldDescriptor mktoFormCol col col-small-6">
     <div class="mktoFieldWrap mktoRequiredField form-group">
@@ -1266,6 +869,7 @@ jQuery(function(){
     </div>
   </div>
 </div>
+-->
 
 <div class="mktoFormRow row">
   <input type="hidden" name="LeadSource" class="mktoField mktoFieldDescriptor mktoFormCol col input col-small-12" value="Website">
@@ -1276,7 +880,7 @@ jQuery(function(){
     <div class="mktoFieldWrap mktoRequiredField form-group">
       <label for="Company_Size__c" class="mktoLabel hide">
 
-        Company size
+        I’m looking for...
 
       </label>
       <div class="select-wrapper">
@@ -1284,37 +888,37 @@ jQuery(function(){
         <select id="Company_Size__c" name="Company_Size__c" class="mktoField mktoRequired">
           <option value="">
 
-            Company size (Required)
+            I’m looking for...
 
           </option>
           <option value="Personal">
 
-            Personal
+            A swimming pool
 
           </option>
           <option value="50 Employees or Less">
 
-            50 Employees or Less
+            An indoor spa
 
           </option>
           <option value="51 to 250 Employees">
 
-            51 to 250 Employees
+            Some pool equipment
 
           </option>
           <option value="251 to 750 Employees">
 
-            251 to 750 Employees
+            A pool cover
 
           </option>
           <option value="751 Employees or More">
 
-            751 Employees or More
+            A commercial project
 
           </option>
           <option value="Agency">
 
-            Agency
+            I have a few questions
 
           </option>
         </select>
@@ -1325,7 +929,7 @@ jQuery(function(){
     <div class="mktoFieldWrap mktoRequiredField form-group">
       <label for="Vertical__c_lead" class="mktoLabel hide">
 
-        Industry:
+        How did you hear about us?
 
       </label>
       <div class="select-wrapper">
@@ -1333,44 +937,45 @@ jQuery(function(){
         <select id="Vertical__c_lead" name="Vertical__c_lead" class="mktoField mktoRequired">
           <option value="">
 
-            Industry (Required)
+            How did you hear about us?
 
           </option>
           <option value="Agency">
 
-            Agency
+            Referral
 
           </option>
           <option value="Automotive">
 
-            Automotive
+            Google
 
           </option>
           <option value="Consumer Packaged Goods">
 
-            Consumer Packaged Goods
+            Facebook
 
           </option>
           <option value="E-Commerce">
 
-            E-Commerce
+            Yelp
 
           </option>
           <option value="Education">
 
-            Education
+            AngiesList
 
           </option>
           <option value="Entertainment">
 
-            Entertainment
+            Print Ad
 
           </option>
           <option value="Financial Services">
 
-            Financial Services
+            I can’t remember exactly...
 
           </option>
+          <!--
           <option value="Food and Beverage">
 
             Food and Beverage
@@ -1416,6 +1021,7 @@ jQuery(function(){
             Travel - Hospitality
 
           </option>
+          -->
         </select>
       </div>
     </div>
@@ -1427,10 +1033,10 @@ jQuery(function(){
     <div class="mktoFieldWrap form-group">
       <label for="Website_Additional_Comments__c" class="mktoLabel hide">
 
-        Why are you interested in using Bitly Enterprise?
+        Send a message to the owner (optional)
 
       </label>
-      <textarea id="Website_Additional_Comments__c" name="Website_Additional_Comments__c" rows="2" class="mktoField" maxlength="32768" placeholder="Why are you interested in using Bitly Enterprise?"></textarea>
+      <textarea id="Website_Additional_Comments__c" name="Website_Additional_Comments__c" rows="2" class="mktoField" maxlength="32768" placeholder="Send a message to the owner (optional)"></textarea>
     </div>
   </div>
 </div>
@@ -1454,9 +1060,11 @@ jQuery(function(){
 <div class="mktoButtonRow">
   <span class="mktoButtonWrap mktoGlow button-toolbar button-toolbar-centered flush-bottom">
     <button type="submit" class="button button-primary">
+      <p >
 
-      REQUEST A DEMO
-
+        GET QUOTE
+      
+      </p>
     </button>
   </span>
 </div>
@@ -1491,34 +1099,34 @@ jQuery(function(){
     
     
     $('.testimonial-individual-1').on('click', function(){
-      billboard.css('background', 'url("./assets/images/testimonials/hero01.png")');
+      billboard.css('background', 'url("./assets/images/testimonials/hero01.jpg")');
       billboard.css('background-size', 'cover');
       triangle.css('left', ($(this).offset().left + ($(this).width()/2.5)) + "px");
-      copy.text('"The Bitly platform has helped us track our promotions across social channels, banner ads, email campaigns and even offline placements."');
+      copy.text('“We have been thrilled with Sun Ray Pools right from the time they came to give us a quote. Bob was on site for every phase of the pool installation. Diane is a whiz with scheduling subcontractors & minimizing delays. We couldn’t be happier with the service and highly recommended sun ray pools.”');
       window.ga('send','event', 'link-click', 'persona-1', 'Persona 1 View');
     });
     
     $('.testimonial-individual-2').on('click', function(){
-      billboard.css('background', 'url("./assets/images/testimonials/hero02.png")');
+      billboard.css('background', 'url("./assets/images/testimonials/hero02.jpg")');
       billboard.css('background-size', 'cover');
       triangle.css('left', ($(this).offset().left + ($(this).width()/2.5)) + "px");
-      copy.text('“In an increasingly competitive social space, Bitly Branded Short Domains help us stand out in an unparalleled way and encourage a higher degree of engagement."');
+      copy.text('“Bob and Diane made the pool installation an awesome experience. They insisted on being present at each phase of the installation. They listened and gave great recommendations on the finishing of the pool and the deck. They were patient with answering our questions and were flexible with our last minute adjustments.”');
       window.ga('send','event', 'link-click', 'persona-2', 'Persona 2 View');
     });
     
     $('.testimonial-individual-3').on('click', function(){
-      billboard.css('background', 'url("./assets/images/testimonials/hero03.png")');
+      billboard.css('background', 'url("./assets/images/testimonials/hero03.jpg")');
       billboard.css('background-size', 'cover');
       triangle.css('left', ($(this).offset().left + ($(this).width()/2.5)) + "px");
-      copy.text('“Bitly Campaigns allows us to see what kinds of content work on what channel, which channels we should be investing in the most, and what we need to do to optimize our content.”');
+      copy.text('“We refer absolutely no one else for new pools and for pool owners with repairs.”');
       window.ga('send','event', 'link-click', 'persona-3', 'Persona 3 View');
     });
     
     $('.testimonial-individual-4').on('click', function(){
-      billboard.css('background', 'url("./assets/images/testimonials/hero04.png")');
+      billboard.css('background', 'url("./assets/images/testimonials/hero04.jpg")');
       billboard.css('background-size', 'cover');
       triangle.css('left', ($(this).offset().left + ($(this).width()/2.5)) + "px");
-      copy.text('"We were actually able to use Bitly data to shed light on dark social media engagement and measure the full value of social for our business.”');
+      copy.text('“I\'m so glad that I chose Sun Ray Pools... Bob and Diane are great to work with. Their attention to detail is flawless. I highly recommend them to anyone.”');
       window.ga('send','event', 'link-click', 'persona-4', 'Persona 4 View');
     });
     
@@ -1569,50 +1177,48 @@ jQuery(function(){
       </div><!-- #enterprise-form-header -->
     </div><!-- #enterprise-form -->
 
-
-
 <footer id="footer" role="contentinfo" data-template="stage-footer">
   <section class="stage-pod">
     <div class="container container-pod">      
       <div class="footer-links">
         <ul id="menu-footer-menu" class="nav footer-nav clearfix">
 
-          <li id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20"><a href="http://blog.bitly.com/">
+          <li id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20"><a href="#">
 
             Blog
 
           </a></li>
-          <li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="http://support.bitly.com/">
+          <li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="#">
 
             Support
 
           </a></li>
-          <li id="menu-item-261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-261"><a href="https://bitly.com/pages/contact">
+          <li id="menu-item-261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-261"><a href="#">
 
             Contact
 
           </a></li>
-          <li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="http://dev.bitly.com/">
+          <li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="#">
 
             Developers
 
           </a></li>
-          <li id="menu-item-2728" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2728"><a href="https://bitly.com/pages/privacy">
+          <li id="menu-item-2728" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2728"><a href="#">
 
             Privacy Policy
 
           </a></li>
-          <li id="menu-item-2729" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2729"><a href="https://bitly.com/pages/terms-of-service">
+          <li id="menu-item-2729" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2729"><a href="#">
 
             Terms Of Service
 
           </a></li>
-          <li id="menu-item-2730" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2730"><a href="https://bitly.com/pages/partners">
+          <li id="menu-item-2730" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2730"><a href="#">
 
             Partners
 
           </a></li>
-          <li id="menu-item-262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-262"><a href="https://bitly.com/pages/careers">
+          <li id="menu-item-262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-262"><a href="#">
 
             Careers
 
@@ -1620,10 +1226,10 @@ jQuery(function(){
         </ul>       
       </div>
       <div class="footer-attribution">
-        <a href="https://bitly.com/" class="footer-logo footer-logo-new">
+        <a href="#" class="footer-logo footer-logo-new">
           <span>
             
-            Bitly
+            Sun Ray Pools
             
           </span>
         </a>
@@ -1631,7 +1237,7 @@ jQuery(function(){
 
       <ul class="footer-social-links">
         <li class="footer-social-link footer-social-link-facebook">
-          <a href="http://www.facebook.com/bitly" target="_blank">
+          <a href="http://www.facebook.com/SunRayPoolsBurleson" target="_blank">
             <span>
 
               Facebook
@@ -1640,7 +1246,7 @@ jQuery(function(){
           </a>
         </li>
         <li class="footer-social-link footer-social-link-twitter">
-          <a href="http://twitter.com/bitly" target="_blank">
+          <a href="http://twitter.com/" target="_blank">
             <span>
               
               Twitter
@@ -1649,7 +1255,7 @@ jQuery(function(){
           </a>
         </li>
         <li class="footer-social-link footer-social-link-linkedin">
-          <a href="http://www.linkedin.com/company/552285" target="_blank">
+          <a href="http://www.linkedin.com/" target="_blank">
             <span>
               
               LinkedIn
@@ -1658,7 +1264,7 @@ jQuery(function(){
           </a>
         </li>
         <li class="footer-social-link footer-social-link-instagram">
-          <a href="http://instagram.com/bitly" target="_blank">
+          <a href="http://instagram.com/" target="_blank">
             <span>
               
               Instagram
@@ -1675,8 +1281,6 @@ jQuery(function(){
     </div>
   </section>
 </footer>
-
-
 
 <div id="modal-form" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none; margin-top: -74px;">
   <a class="modal-close" data-dismiss="modal">
@@ -1720,6 +1324,8 @@ jQuery(function(){
 
 
 
+
+
 </div><!-- #page-content (FROM WAY UP) -->
 
 
@@ -1733,15 +1339,14 @@ jQuery(function(){
             <div id="stage-sidebar-scrollable" class="container-scrollable ps-container">
               <div class="container container-pod container-pod-short">
                 <ul id="menu-mobile-menu" class="nav top-nav clearfix">
-                  <li><a href="https://bitly.com/">Home</a></li>
-                  <li><a href="https://bitly.com/pages/tour">Tour</a></li>
-                  <li><a href="https://bitly.com/pages/enterprise">Enterprise</a></li>
-                  <li><a href="https://bitly.com/pages/resources">Resources</a></li>
-                  <li><a href="https://bitly.com/pages/about">Company</a></li>
-                  <li><a href="https://bitly.com/pages/contact">Contact</a></li>
-                  <li><a href="https://bitly.com/pages/careers">Careers</a></li>
-                  <li><a href="https://bitly.com/pages/press">Press Room</a></li>
-                  <li><a href="https://bitly.com/pages/partners">Partners</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Enterprise</a></li>
+                  <li><a href="#">Resources</a></li>
+                  <li><a href="#">Company</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Press Room</a></li>
+                  <li><a href="#">Partners</a></li>
                 </ul>
               </div>
               <div class="ps-scrollbar-x-rail" style="width: 974px; display: none; left: 0px; bottom: 3px;">
@@ -1778,7 +1383,7 @@ jQuery(function(){
 
 <script type="text/javascript">
   /* <![CDATA[ */
-  var bitly = {"site_domain":"http:\/\/bitly.com","site_url":"http:\/\/bitly.com\/pages","site_home":"http:\/\/bitly.com\/pages"};
+  var bitly = {"site_domain":"http:\/\/sunraypoolstx.com","site_url":"http:\/\/sunraypoolstx.com","site_home":"http:\/\/sunraypoolstx.com"};
   /* ]]> */
 </script>
 
